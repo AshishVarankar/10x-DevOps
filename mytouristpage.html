@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Tourist Places in India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1f4788;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #ff6b35;
+            text-align: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .tourist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .tourist-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tourist-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h2 {
+            color: #1f4788;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .location {
+            color: #ff6b35;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .location::before {
+            content: "📍 ";
+            margin-right: 0.5rem;
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .best-time {
+            background-color: #f0f0f0;
+            padding: 0.75rem;
+            border-left: 4px solid #ff6b35;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .best-time strong {
+            color: #1f4788;
+        }
+
+        footer {
+            background-color: #1f4788;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        .intro-section {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem auto;
+            max-width: 1200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-section h2 {
+            color: #1f4788;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .intro-section p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>🇮🇳 Top 10 Tourist Places in India</h1>
+        <p>Explore the beautiful and iconic destinations across India</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Introduction Section -->
+    <div class="intro-section">
+        <h2>Welcome to India!</h2>
+        <p>
+            India is a land of incredible diversity, rich history, and breathtaking landscapes. From ancient monuments 
+            to natural wonders, India offers unforgettable experiences for every traveler. This guide will take you through 
+            the top 10 must-visit tourist destinations in India.
+        </p>
+    </div>
+
+    <!-- Tourist Places Grid -->
+    <div class="tourist-grid">
+        <!-- 1. Taj Mahal -->
+        <div class="tourist-card">
+            <div class="card-image">🕌</div>
+            <div class="card-content">
+                <h2>Taj Mahal</h2>
+                <div class="location">Agra, Uttar Pradesh</div>
+                <p class="description">
+                    A magnificent white marble mausoleum built by Mughal Emperor Shah Jahan for his wife Mumtaz Mahal. 
+                    It is one of the Seven Wonders of the World and a symbol of eternal love.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to March
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Red Fort -->
+        <div class="tourist-card">
+            <div class="card-image">🏰</div>
+            <div class="card-content">
+                <h2>Red Fort</h2>
+                <div class="location">Delhi</div>
+                <p class="description">
+                    A historic fort complex built by Mughal Emperor Shah Jahan. It served as the main residence of Mughal 
+                    emperors and holds great significance in Indian history.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> November to February
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Jaipur City Palace -->
+        <div class="tourist-card">
+            <div class="card-image">👑</div>
+            <div class="card-content">
+                <h2>Jaipur City Palace</h2>
+                <div class="location">Jaipur, Rajasthan</div>
+                <p class="description">
+                    A stunning blend of Rajasthani and Mughal architecture, the City Palace is still partially the 
+                    royal residence of the royal family of Jaipur. It's an architectural marvel.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to March
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Varanasi Ghats -->
+        <div class="tourist-card">
+            <div class="card-image">🙏</div>
+            <div class="card-content">
+                <h2>Varanasi Ghats</h2>
+                <div class="location">Varanasi, Uttar Pradesh</div>
+                <p class="description">
+                    Sacred bathing steps along the Ganges River. Varanasi is one of the holiest cities in Hinduism and 
+                    offers a profound spiritual experience. The evening Aarti ceremony is spectacular.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to December
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Goa Beaches -->
+        <div class="tourist-card">
+            <div class="card-image">🏖️</div>
+            <div class="card-content">
+                <h2>Goa Beaches</h2>
+                <div class="location">Goa</div>
+                <p class="description">
+                    Beautiful beaches known for their golden sand, clear waters, and vibrant nightlife. Goa is perfect 
+                    for relaxation, water sports, and experiencing Portuguese colonial architecture.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> November to February
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Kerala Backwaters -->
+        <div class="tourist-card">
+            <div class="card-image">🚤</div>
+            <div class="card-content">
+                <h2>Kerala Backwaters</h2>
+                <div class="location">Kerala</div>
+                <p class="description">
+                    A network of lagoons and lakes connected by canals, the backwaters are a serene paradise. Houseboat 
+                    cruises offer a peaceful way to explore the natural beauty of Kerala.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to February
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Himalayan Mountains -->
+        <div class="tourist-card">
+            <div class="card-image">⛰️</div>
+            <div class="card-content">
+                <h2>Himalayan Mountains</h2>
+                <div class="location">Himachal Pradesh, Uttarakhand, Sikkim</div>
+                <p class="description">
+                    The world's highest mountain range offers stunning trekking, scenic beauty, and adventure activities. 
+                    Popular spots include Manali, Shimla, and Darjeeling for breathtaking views.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> May to October
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Ranthambore National Park -->
+        <div class="tourist-card">
+            <div class="card-image">🐅</div>
+            <div class="card-content">
+                <h2>Ranthambore National Park</h2>
+                <div class="location">Sawai Madhopur, Rajasthan</div>
+                <p class="description">
+                    One of India's most famous tiger reserves, Ranthambore offers exciting wildlife safaris. The park is 
+                    also home to leopards, sloth bears, and numerous bird species.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to June
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Hampi Ruins -->
+        <div class="tourist-card">
+            <div class="card-image">🗿</div>
+            <div class="card-content">
+                <h2>Hampi Ruins</h2>
+                <div class="location">Hampi, Karnataka</div>
+                <p class="description">
+                    Ancient ruins of the Vijayanagara Empire showcase magnificent medieval Hindu temple architecture. 
+                    The site is a UNESCO World Heritage site and an archaeological wonder.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to February
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. Jaisalmer Fort -->
+        <div class="tourist-card">
+            <div class="card-image">🏜️</div>
+            <div class="card-content">
+                <h2>Jaisalmer Fort</h2>
+                <div class="location">Jaisalmer, Rajasthan</div>
+                <p class="description">
+                    A massive sandstone fort in the heart of the Thar Desert. Jaisalmer offers desert safaris, 
+                    golden sand dunes, and a glimpse of Rajasthani culture and architecture.
+                </p>
+                <div class="best-time">
+                    <strong>Best Time to Visit:</strong> October to March
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Top Tourist Places in India. All rights reserved.</p>
+        <p>Created for beginners to explore and learn about India's amazing destinations.</p>
+        <p>Email: info@touristindia.com | Phone: +91-XXX-XXXX-XXXX</p>
+    </footer>
+</body>
+</html>
+
+
+
